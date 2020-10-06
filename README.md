@@ -3,7 +3,7 @@ weather journal app is simply a Resposive Web App that collects weather details 
 
 
 ## How to use it
-Run the server then go to "http://localhost:8000/" and finaly inter your inputs (zip code and your feelings about the day). 
+Run the server then go to "http://localhost:8000/" and finaly enter your inputs (zip code and your feelings about the day). 
 
 
 ## How to edit files
