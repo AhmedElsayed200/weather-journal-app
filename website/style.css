@@ -1,0 +1,182 @@
+/* main container */
+body {
+    margin: 20px 20px 0 20px;  
+    font-size: 100%;  
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 100; 
+    color: white;  
+    height: 100vh;  
+    background: -webkit-linear-gradient(to bottom, rgb(43,50,178) 0%, rgb(20,136,204) 100%);
+    background: -o-linear-gradient(to bottom, rgb(43,50,178) 0%, rgb(20,136,204) 100%);
+    background: -moz-linear-gradient(to bottom, rgb(43,50,178) 0%, rgb(20,136,204) 100%);
+    background: linear-gradient(to bottom, rgb(43,50,178) 0%, rgb(20,136,204) 100%);
+    background-repeat: no-repeat;  
+    background-attachment: fixed; 
+}
+
+#app {
+    font-size: 1.2rem;
+}
+
+/* section A: country and date */
+#secA {
+    width: 100%;
+}
+
+#country {
+    font-size: 2.5rem;
+    font-weight: 600;  
+}
+
+/* section B: temperature, icon and weather description */
+#secB {
+    width: 100%;
+    text-align: center;
+}
+
+#secB > div, #secB > img {
+    display: inline-block;
+}
+
+#temp {
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+img#weatherImage {
+    width: 150px;
+    height: 150px;
+    display: none;
+}
+
+/* section C: additional weather details */
+#secC {
+    width: 100%;
+    text-align: center;
+}
+
+#secC div {
+    display: inline-block;
+    width: 30%
+}
+
+#tempMax, #windSpeed, #humadity {
+    margin-bottom: 16%;
+}
+
+/* section D: user comment */
+#secD {
+    width: 100%;
+    text-align: center;
+}
+
+/* section E: user inputs */
+#secE {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: -webkit-linear-gradient(to bottom, rgb(43,50,178) 0%, rgb(20,136,204) 100%);
+    background: -o-linear-gradient(to bottom, rgb(43,50,178) 0%, rgb(20,136,204) 100%);
+    background: -moz-linear-gradient(to bottom, rgb(43,50,178) 0%, rgb(20,136,204) 100%);
+    background: linear-gradient(to bottom, rgb(43,50,178) 0%, rgb(20,136,204) 100%);
+    background-repeat: no-repeat;  
+    background-attachment: fixed; 
+}
+
+input#zip, textarea#feelings {
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    width: 80%;
+    height: 60px;
+    background-color: #a8d0ff;  
+    padding: 3px 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #2b3040;
+    font-weight: 600;
+} 
+
+#paddingB {
+    padding: 150px 10px 0 60px;
+}
+
+textarea#feelings {
+    height: 200px;
+    margin-top: 5%;
+}
+
+/* lines */
+.line {
+    width: 95%;
+    margin: 5% auto;
+    border-bottom: 1px #fff solid;
+    display: none;
+}
+
+/* buttons */
+button#addInfo, button#generate {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #a8d0ff;
+    cursor: pointer;
+}
+
+/* laptops' and tablets' screens */
+@media screen and (min-width: 768px) {
+    #app {
+        font-size: 1.4rem;
+    }
+    body {
+        background: #4261cf;
+        margin: 0;
+    }
+    #weatherDetails {
+        z-index: 1;
+        display: inline-block;
+        width: 40%;
+        height: 100vh;
+        border-right: 3px #fff solid;
+        border-bottom-right-radius: 40%;
+        border-top-right-radius: 20%;
+        background: linear-gradient(to bottom, rgb(43,50,178) 0%, rgb(20,136,204) 100%);
+        background-repeat: no-repeat;  
+        background-attachment: fixed; 
+    }
+    #paddingA {
+        padding: 40px 30px 0 30px;
+    }
+    button#addInfo {
+        display: none;
+    }
+    #secE {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline-block;
+        width: 40%;
+        height: 100vh;
+        border-left: 3px #fff solid;
+        border-bottom-left-radius: 40%;
+        border-top-left-radius: 20%;
+        background: linear-gradient(to bottom, rgb(43,50,178) 0%, rgb(20,136,204) 100%);
+        background-repeat: no-repeat;  
+        background-attachment: fixed; 
+    }
+    #paddingB {
+        padding: 40px 0 0 90px;
+    }
+    button#generate {
+        bottom: 30%;
+        right: 5%;
+    }
+}
